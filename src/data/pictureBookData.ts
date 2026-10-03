@@ -2,71 +2,139 @@ import { SpreadItem, CharacterSpec, PaletteColor } from '../types';
 
 export const SPREADS: SpreadItem[] = [
   {
-    id: 'spread-pinhole-correct',
-    pageNumber: 1,
-    title: 'Spread 01: The Camera Obscura Discovery (Corrected)',
-    arabicTitle: 'السبريد ١: اكتشاف الصندوق المظلم (القُمرة)',
-    subtitle: 'Nour, Anas & Hibr outside the box observing the internal projection',
+    id: 's01-cover',
+    pageNumber: 0,
+    title: 'Cover Spread: The Golden Chest & Pinhole (Landscape 4:3)',
+    arabicTitle: 'الغلاف الممتد: ابن الهيثم والغرفة المظلمة',
+    subtitle: 'Nour, Anas & Hibr outside the box observing the camera obscura',
     imagePath: '/src/assets/images/pinhole_spread_correct_1791049448505.jpg',
     aspectRatio: '16:9',
     description:
-      'The modest-sized wooden dark box (camera obscura) rests on the floor. A tiny pinhole lets in a ray of golden light, projecting the outer scene onto the opposite interior wall. Nour, Anas, and Hibr are all standing outside behind the box, looking down with wide-eyed curiosity.',
+      'Nour, Anas, and Hibr are all standing outside the antique wooden box watching the golden light beam project onto the inner wall. Back cover on the right has clean space for summary and barcode.',
     sceneDetails: {
-      leftZone: 'Nour, Anas and Hibr stand together OUTSIDE the modest-sized wooden box, peering over the top edge to watch the golden projection forming on the inner opposite wall.',
-      rightZone: 'Clean cream watercolor paper, delicate amber-gold top ray motif, and soft vignette of Hibr in the lower-left area with ample text space.',
-      magicalElement: 'Pinhole optics: amber light beam entering the small hole and projecting an inverted glowing image onto the inner wall.',
-      spineClearance: 'Spine gutter (4%) completely free of characters and box geometry.'
+      leftZone: 'Nour, Anas and Hibr stand OUTSIDE the box, looking down at the inner projection.',
+      rightZone: 'Minimalist cream watercolor wash, top ray motif, and lower-left kitten vignette.',
+      magicalElement: 'Amber-gold radiance (#F2A93B) connecting across centuries.',
+      spineClearance: 'Spine fold area kept completely clear of faces.'
     }
   },
   {
-    id: 'spread-camera-obscura',
+    id: 's01-p01',
+    pageNumber: 1,
+    title: 'Page 1: The Library Discovery & Pinhole Box (Portrait 3:4)',
+    arabicTitle: 'صفحة ١: العثور على الصندوق ذي الثقب في المكتبة',
+    subtitle: 'Nour, Anas with notebook, and Hibr calling by the box',
+    imagePath: '/src/assets/images/p01_library_box_1791052921743.jpg',
+    aspectRatio: '3:4',
+    description:
+      'In an old cozy library, Nour bends toward the wooden box with a small hole. Anas holds his notebook asking what it is, and Hibr meows as a ray of golden light emerges.',
+    sceneDetails: {
+      leftZone: 'Single page portrait: scene in lower 60%, top 38% empty cream paper for text.',
+      rightZone: 'N/A (Single vertical portrait page).',
+      magicalElement: 'Golden light ray emerging from the pinhole.',
+      spineClearance: 'Safe margins inside 84% width and 92% height.'
+    }
+  },
+  {
+    id: 's01-p02-03',
     pageNumber: 2,
-    title: 'Spread 02: Ray of Amber & Inverted Light',
-    arabicTitle: 'السبريد ٢: شعاع العنبر وتكوّن الصورة',
-    subtitle: 'Alternative Watercolor Angle with Trio Looking In from Outside',
-    imagePath: '/src/assets/images/camera_obscura_spread_1791049460241.jpg',
-    aspectRatio: '16:9',
+    title: 'Pages 2–3: Meeting Ibn Haytham in Basra (Spread 4:3)',
+    arabicTitle: 'صفحات ٢–٣: لقاء الحسن بن الهيثم في بساتين البصرة',
+    subtitle: 'Ibn Haytham welcoming Nour & Hibr across temporal light',
+    imagePath: '/src/assets/images/p02_03_basra_river_1791052934815.jpg',
+    aspectRatio: '4:3',
     description:
-      'Atmospheric watercolor rendering showing the three companions standing outside the cedar pinhole box, observing the warm golden ray passing through the small aperture and casting light onto the interior.',
+      'Ibn Haytham welcomes them by the palm grove of Basra. Nour and Hibr arrive surrounded by the gentle amber aura of the portal.',
     sceneDetails: {
-      leftZone: 'The three characters positioned fully outside the box, marveling at the scientific & magical optical phenomenon inside.',
-      rightZone: 'Pristine paper texture, top amber filament, and lower-left kitten vignette with barcode reserve intact.',
-      magicalElement: 'Golden optical projection connecting physical light with timeless wonder.',
-      spineClearance: 'Preserved 4% vertical strip down the center binding.'
+      leftZone: 'Nour and Hibr arriving in wonder with faint amber glow in the lower left.',
+      rightZone: 'Ibn Haytham standing warmly welcoming on the right bank in sand robe and turban.',
+      magicalElement: 'Amber temporal glow connecting present and 11th century.',
+      spineClearance: '4% central vertical strip kept clear.'
     }
   },
   {
-    id: 'spread-1',
-    pageNumber: 3,
-    title: 'Spread 03: Radiant Discovery (Initial Concept)',
-    arabicTitle: 'السبريد ٣: إشعاع الصندوق (المفهوم الأولي)',
-    subtitle: 'Previous variation with glowing chest illumination',
-    imagePath: '/src/assets/images/storybook_spread_1791046758939.jpg',
-    aspectRatio: '16:9',
-    description:
-      'Initial dramatic watercolor spread showing the warm golden illumination radiating outward from the box opening.',
-    sceneDetails: {
-      leftZone: 'Characters clustered near the large illuminated chest.',
-      rightZone: 'Cream paper background with top ray motif and Hibr vignette.',
-      magicalElement: 'Amber-gold radiance (#F2A93B).',
-      spineClearance: 'Central binding safe area respected.'
-    }
-  },
-  {
-    id: 'spread-2',
+    id: 's01-p04-05',
     pageNumber: 4,
-    title: 'Spread 04: Soft Ambient Dust (Initial Concept B)',
-    arabicTitle: 'السبريد ٤: غبار الضوء (المفهوم الأولي ب)',
-    subtitle: 'Soft watercolor wash variation',
-    imagePath: '/src/assets/images/book_cover_spread_1791046769561.jpg',
-    aspectRatio: '16:9',
+    title: 'Pages 4–5: The Nile, Aswan & Learning from Mistakes (Spread 4:3)',
+    arabicTitle: 'صفحات ٤–٥: نهر النيل ومراكبه وأسوان والاعتراف بالخطأ',
+    subtitle: 'Hopeful on the Nile, and humble realization in rocky Aswan',
+    imagePath: '/src/assets/images/p04_05_nile_aswan_1791054654042.jpg',
+    aspectRatio: '4:3',
     description:
-      'Early study focusing on paper texture, color bleeds, and ambient watercolor transparency.',
+      'Right page: Ibn Haytham on the Nile bank with sailboats, hopeful hand raised, Nour and Hibr beside him. Left page: Ibn Haytham in rocky Aswan realizing the task is harder and smiling with humility.',
     sceneDetails: {
-      leftZone: 'Warm atmospheric glow and golden light rays.',
-      rightZone: 'Minimalist cream negative space.',
-      magicalElement: 'Soft golden dust in the air.',
-      spineClearance: 'Central gutter clearance maintained.'
+      leftZone: 'Ibn Haytham on a rock in Aswan with thoughtful pose, learning from his mistake.',
+      rightZone: 'The Nile at midday with wooden sailboats; Ibn Haytham, Nour, and Hibr watching.',
+      magicalElement: 'Turquoise river wash (#2E9E8F) and courage to admit errors.',
+      spineClearance: 'Fold completely clear between the two moments.'
+    }
+  },
+  {
+    id: 's01-p06-07',
+    pageNumber: 6,
+    title: 'Pages 6–7: Quiet Home & How Do We See? (Spread 4:3)',
+    arabicTitle: 'صفحات ٦–٧: كيف نرى؟ ونظرية أشعة الشمس والعين',
+    subtitle: 'Ibn Haytham contemplating vision theories in his quiet home',
+    imagePath: '/src/assets/images/p06_07_home_theory_1791054665502.jpg',
+    aspectRatio: '4:3',
+    description:
+      'In his quiet sand-colored home, Ibn Haytham ponders vision by the window. Nour listens and Hibr rests near them. Two soft picture bubbles depict the ancient ray theory versus the incoming light truth.',
+    sceneDetails: {
+      leftZone: 'Picture bubble showing outgoing ray theory versus incoming light rays.',
+      rightZone: 'Ibn Haytham thinking by the window, Nour listening, Hibr curled up.',
+      magicalElement: 'Truth of light entering the eyes from outside.',
+      spineClearance: 'Lower 58% height scene, central gutter clear.'
+    }
+  },
+  {
+    id: 's01-p08-09',
+    pageNumber: 8,
+    title: 'Pages 8–9: The Camera Obscura Dark Room (Spread 4:3)',
+    arabicTitle: 'صفحات ٨–٩: الغرفة المظلمة وانعكاس الصورة المقلوبة',
+    subtitle: 'Light travels in straight lines — inverted minaret experiment',
+    imagePath: '/src/assets/images/p08_09_dark_room_1791052949280.jpg',
+    aspectRatio: '4:3',
+    description:
+      'Inside the dark indigo room, a narrow golden beam enters through the pinhole, projecting an inverted image of the house and minaret onto the opposite wall. Nour laughs and Ibn Haytham explains.',
+    sceneDetails: {
+      leftZone: 'Opposite wall showing inverted minaret and house; Nour laughing with raised hands.',
+      rightZone: 'Right wall with round pinhole beam entering; Ibn Haytham pointing gently; Hibr looking.',
+      magicalElement: 'Optical straight-line amber beam forming inverted image.',
+      spineClearance: 'Central 4% gutter clear of faces.'
+    }
+  },
+  {
+    id: 's01-p10-11',
+    pageNumber: 10,
+    title: 'Pages 10–11: Kitab al-Manazir & Camera Inventions (Spread 4:3)',
+    arabicTitle: 'صفحات ١٠–١١: تأليف كتاب المناظر واختراع الكاميرات',
+    subtitle: 'Writing with reed pen, connected by golden thread to modern cameras',
+    imagePath: '/src/assets/images/p10_11_manazir_camera_1791054675706.jpg',
+    aspectRatio: '4:3',
+    description:
+      'Right page: Ibn Haytham writing Kitab al-Manazir with a reed pen, candle, and pinhole box; Nour and Hibr watching. Left page: an antique wooden box camera beside a modern smartphone, linked by an amber light thread.',
+    sceneDetails: {
+      leftZone: 'Vignette of antique box camera and modern phone with glowing amber thread.',
+      rightZone: 'Ibn Haytham writing at desk, candle, pinhole box, Nour and Hibr watching.',
+      magicalElement: 'Golden thread connecting 11th-century optics to 21st-century cameras.',
+      spineClearance: 'Thread crosses clear of faces and fold.'
+    }
+  },
+  {
+    id: 's01-p12-13',
+    pageNumber: 12,
+    title: 'Pages 12–13: Return to Library & Passing Knowledge (Spread 4:3)',
+    arabicTitle: 'صفحات ١٢–١٣: العودة للمكتبة وتوارث المعرفة',
+    subtitle: 'Nour tells Anas as knowledge passes generation to generation',
+    imagePath: '/src/assets/images/p12_13_corrected_1791054690177.jpg',
+    aspectRatio: '4:3',
+    description:
+      'Back in the cozy library, Nour tells the story to Anas, who listens wide-eyed and writes in his notebook. The golden thread passes from the box to Nour to Anas. Hibr the cat sits on a high shelf whispering.',
+    sceneDetails: {
+      leftZone: 'Calm wooden bookshelves with turquoise, indigo, sand and amber book spines; Hibr the cat on shelf.',
+      rightZone: 'Nour narrating, Anas sketching in notebook, glowing box on table passing golden thread.',
+      magicalElement: 'Golden light thread passing knowledge to Anas.',
+      spineClearance: 'Spine fold completely clear.'
     }
   }
 ];
@@ -174,6 +242,41 @@ export const CHARACTERS: CharacterSpec[] = [
     ],
     lore: 'Named "Hibr" (Arabic for Ink) after a calligrapher’s inkwell. Hibr detects the magical threshold before anyone else and curls up near ancient artifacts.',
     quote: 'مياو... (عيناه تتوهجان بلون الذهب الدافئ)'
+  },
+  {
+    name: 'Ibn Haytham',
+    arabicName: 'الحَسَن ابْن الهَيْثَم',
+    role: '11th-Century Scholar & Father of Modern Optics',
+    age: 'Mid-Forties / Fifties',
+    visualTraits: [
+      'Kind scholar face with calm warm eyes and gentle smile',
+      'Short neat gray beard and mustache',
+      'Simple sand-colored (#D9A66B) turban',
+      'Never depicted in blue: earth-brown or sand robe with indigo trim'
+    ],
+    clothing: [
+      {
+        item: 'Scholar Turban',
+        colorHex: '#D9A66B',
+        colorName: 'Warm Sand',
+        notes: 'Classic 11th-century turban wrapped neatly'
+      },
+      {
+        item: 'Long Outer Robe',
+        colorHex: '#9C6F42',
+        colorName: 'Earth-Toned Sand-Brown',
+        notes: 'Always earth or sand, strictly never blue'
+      },
+      {
+        item: 'Robe Trim & Lapels',
+        colorHex: '#2F4B8A',
+        colorName: 'Indigo Blue',
+        notes: 'Delicate indigo border along the opening and cuffs'
+      }
+    ],
+    prop: 'Reed pen and Kitab al-Manazir manuscript',
+    lore: 'Born in Basra over a thousand years ago. He was an inquisitive thinker who tested every hypothesis with practical experiments. Creator of the camera obscura concept and author of Kitab al-Manazir.',
+    quote: '«الضوء يسير في خطوط مستقيمة... وكلنا نخطئ، والخطأ بابٌ من أبواب التعلم!»'
   }
 ];
 
@@ -289,3 +392,129 @@ export const STORY_PRESETS = {
     text: 'Outside the cedar box, Nour, little Anas, and Hibr the cat leaned in together with wide-eyed curiosity.\n\nThrough a tiny pinhole on the side, a warm amber-gold beam of light pierced into the dark chamber, magically projecting the scene from outside onto the opposite inner wall.\n\nAnas eagerly opened his notebook: "Look, Nour! The light is painting a picture on the inside wall—just like the ancient experiment of the dark room!"'
   }
 };
+
+export const IBN_HAYTHAM_STORY_SCRIPT = {
+  series: 'مكتبة النور الصغيرة — حكايات الاكتشاف (٤–٧ سنوات)',
+  storyTitle: 'ابن الهيثم والغرفة المظلمة',
+  storySubtitle: 'كيف نرى الأشياء؟ وسر الضوء الذي يسير في خطوط مستقيمة',
+  author: 'الحسن بن الهيثم',
+  pages: [
+    {
+      page: 1,
+      type: 'portrait',
+      textArabic: 'فِي مَكْتَبَةٍ قَدِيمَة، وَجَدَتْ «نُور» صُنْدُوقاً صَغِيراً فِيهِ ثَقْب.\nوَسَأَلَهَا أَخُوهَا الصَّغِير «أَنَس»: مَا هَذَا يَا نُور؟\nجَاءَهَا قِطٌّ اسْمُهُ «حِبْر» وَمَوَاء: «انْظُرِي مِنَ الثَّقْب!»',
+      textEnglish: 'In an old cozy library, Nour found a small wooden box with a round hole. Her little brother Anas asked: "What is this, Nour?" Hibr the cat meowed: "Look through the hole!"',
+      note: 'ضوء ذهبي يخرج من ثقب الصندوق'
+    },
+    {
+      page: 2,
+      type: 'spread-right',
+      textArabic: 'نَظَرَتْ نُور مِنَ الثَّقْبِ فَرَأَتْ صَحْرَاءَ وَنَهْراً كَبِيراً، وَأَمَامَهَا رَجُلٌ طَيِّبُ الوَجْهِ يَبْتَسِم:\n«أَنَا الحَسَنُ ابْنُ الهَيْثَم. هَلْ تُحِبِّينَ الأَسْئِلَة؟»',
+      textEnglish: 'Looking through the hole, Nour saw a desert and a wide river. Before her stood a kind smiling man: "I am Al-Hasan Ibn al-Haytham. Do you love questions?"',
+      note: 'لقاء ابن الهيثم في بساتين البصرة'
+    },
+    {
+      page: 3,
+      type: 'spread-left',
+      textArabic: 'وُلِدَ ابْنُ الهَيْثَمِ قَبْلَ أَكْثَرَ مِنْ أَلْفِ سَنَةٍ فِي مَدِينَةِ البَصْرَة.\nكَانَ طِفْلاً يَسْأَل: «لِمَاذَا؟ وَكَيْف؟» وَلَا يَكْتَفِي بِالجَوَابِ الأَوَّل.',
+      textEnglish: 'Ibn al-Haytham was born over a thousand years ago in Basra. As a boy, he always asked "Why?" and "How?" and was never satisfied with simple answers.',
+      note: 'طفولة ابن الهيثم وفضوله'
+    },
+    {
+      page: 4,
+      type: 'spread-right',
+      textArabic: 'ثُمَّ سَافَرَ إِلَى مِصْر، وَأَحَبَّ نَهْرَهَا العَظِيم.\nيُحْكَى أَنَّهُ قَالَ: «أَسْتَطِيعُ تَنْظِيمَ فَيَضَانِ النِّيل!»',
+      textEnglish: 'He traveled to Egypt and fell in love with the great Nile. It is said he believed he could regulate its mighty annual flood.',
+      note: 'نهر النيل ومراكب شراعية'
+    },
+    {
+      page: 5,
+      type: 'spread-left',
+      textArabic: 'لَكِنَّهُ ذَهَبَ إِلَى أَسْوَانَ وَنَظَرَ وَفَكَّر، فَعَرَفَ أَنَّ الأَمْرَ أَصْعَبُ مِمَّا ظَنّ.\nقَالَ بِشَجَاعَة: «لَقَدْ أَخْطَأْت، وَسَأَتَعَلَّمُ مِنْ خَطَئِي!»',
+      textEnglish: 'But in Aswan, upon observing the terrain, he realized the task was far greater than he imagined. Bravely he admitted: "I made a mistake, and I will learn from it!"',
+      note: 'شجاعة الاعتراف بالخطأ والتعلم منه'
+    },
+    {
+      page: 6,
+      type: 'spread-right',
+      textArabic: 'أَمْضَى ابْنُ الهَيْثَمِ بَعْدَهَا وَقْتاً هَادِئاً فِي بَيْتِه،\nوَهُنَاكَ بَدَأَ سُؤَالُهُ الكَبِير: كَيْفَ نَرَى الأَشْيَاء؟',
+      textEnglish: 'Ibn al-Haytham then spent quiet contemplative days in his home, where his greatest question took root: How do we see the world around us?',
+      note: 'التفكير والتأمل الهادئ'
+    },
+    {
+      page: 7,
+      type: 'spread-left',
+      textArabic: 'كَانَ النَّاسُ يَقُولُونَ قَدِيماً إِنَّ عُيُونَنَا تُرْسِلُ أَشِعَّةً تَلْمَسُ الأَشْيَاء.\nلَكِنَّ ابْنَ الهَيْثَمِ سَأَل: «هَلْ نَرَى فِي الظَّلَامِ إِذَاً؟ لَا! فَلَا بُدَّ أَنَّ الضَّوْءَ هُوَ الَّذِي يَأْتِي إِلَيْنَا.»',
+      textEnglish: 'People long ago believed our eyes shot beams to touch objects. But Ibn al-Haytham reasoned: "Do we see in pitch darkness then? No! Light must be traveling to our eyes from outside."',
+      note: 'دحض نظرية الرؤية القديمة بالمنطق'
+    },
+    {
+      page: 8,
+      type: 'spread-right',
+      textArabic: 'أَغْلَقَ نَوَافِذَ غُرْفَتِه، وَتَرَكَ ثَقْباً صَغِيراً فِي الجِدَار.\nفَظَهَرَتْ عَلَى الحَائِطِ صُورَةُ الشَّارِع، لَكِنَّهَا مَقْلُوبَة!',
+      textEnglish: 'He darkened his room completely and left only a tiny pinhole in the wall. Behold—on the opposite wall appeared the street outside, projected upside down!',
+      note: 'الغرفة المظلمة والصورة المقلوبة'
+    },
+    {
+      page: 9,
+      type: 'spread-left',
+      textArabic: 'ضَحِكَتْ نُور: «الدُّنْيَا تَمْشِي عَلَى رَأْسِهَا!»\nفَقَالَ ابْنُ الهَيْثَم: «الضَّوْءُ يَسِيرُ فِي خُطُوطٍ مُسْتَقِيمَة، وَلِهَذَا انْقَلَبَتِ الصُّورَة.»',
+      textEnglish: 'Nour laughed: "The world is standing on its head!" Ibn al-Haytham smiled: "Light travels in straight lines, and that is why the rays cross and the image turns upside down."',
+      note: 'قانون سير الضوء في خطوط مستقيمة'
+    },
+    {
+      page: 10,
+      type: 'spread-right',
+      textArabic: 'كَتَبَ ابْنُ الهَيْثَمِ مَا تَعَلَّمَهُ فِي كِتَابٍ اسْمُهُ «كِتَابُ المَنَاظِر»،\nوَقَدْ جَرَّبَ فِيهِ كُلَّ فِكْرَةٍ بِنَفْسِهِ قَبْلَ أَنْ يَكْتُبَهَا.',
+      textEnglish: 'Ibn al-Haytham recorded his findings in his landmark book "Kitab al-Manazir" (The Book of Optics), proving every principle through experiments before penning it down.',
+      note: 'تأليف كتاب المناظر والمنهج التجريبي'
+    },
+    {
+      page: 11,
+      type: 'spread-left',
+      textArabic: 'بَعْدَ مِئَاتِ السِّنِين، قَرَأَ العُلَمَاءُ فِي العَالَمِ كِتَابَهُ وَتَعَلَّمُوا مِنْه،\nوَسَاعَدَتْ أَفْكَارُهُ عَلَى صُنْعِ الكَامِيرَاتِ وَالهَوَاتِفِ الحَدِيثَة.',
+      textEnglish: 'Centuries later, scholars across the globe studied his treatise, using his principles of the dark room (camera obscura) to invent modern cameras and optical sensors.',
+      note: 'توارث العلم واختراع الكاميرات'
+    },
+    {
+      page: 12,
+      type: 'spread-right',
+      textArabic: 'عَادَتْ نُور إِلَى المَكْتَبَةِ وَفِي قَلْبِهَا سُؤَالٌ جَدِيد.\nفَأَمْسَكَ أَنَسٌ دَفْتَرَهُ وَقَالَ: «احْكِي لِي!» فَبَسَمَتْ نُور وَبَدَأَتْ تَحْكِي لَهُ كَمَا حَكَى لَهَا ابْنُ الهَيْثَم.',
+      textEnglish: 'Back in the cozy library, Nour carried a new wonder in her heart. Anas opened his notebook: "Tell me everything!" and Nour smiled, sharing the story of light just as Ibn al-Haytham had taught her.',
+      note: 'تمرير العلم ونور تحكي لأنس'
+    },
+    {
+      page: 13,
+      type: 'spread-left',
+      textArabic: 'هَمَسَ القِطُّ حِبْر وَعَيْنَاهُ تَتَوَهَّجَانِ بِالضَّوْءِ العَنْبَرِيّ:\n«كُلُّ كِتَابٍ يَبْدَأُ بِسُؤَال...» 🌟',
+      textEnglish: 'Hibr the cat purred softly with luminous amber eyes: "Every great book begins with a question..."',
+      note: 'حكمة ختام القصة'
+    }
+  ],
+  corners: {
+    tryItYourself: {
+      title: 'ركن «جرّبها بنفسك» 🔦',
+      description: 'اصنع غرفتك المظلمة الصغيرة: خذ علبة كرتون، واصنع ثقباً صغيراً بحجم رأس الدبوس في أحد جانبيها، وورقة شفافة رقيقة على الجانب المقابل. وجّه الثقب نحو نافذة مضيئة وانظر: ستظهر صورة الشارع أو الحديقة مقلوبة تماماً!',
+      discussionQuestion: 'سؤال للنقاش مع الوالدين: لماذا لا نرى شيئاً في الغرفة المظلمة تماماً دون أي مصدر للضوء؟',
+      newWord: '«مَنَاظِر» = علم النظر والبصريات (Optics)، وهي جمع منظر.'
+    },
+    factOrFiction: [
+      { type: 'fact', label: 'حقيقة', text: 'كتب ابن الهيثم «كتاب المناظر» وأجرى فيه تجارب عملية دقيقة أحدثت ثورة في تاريخ العلم.' },
+      { type: 'fact', label: 'حقيقة', text: 'الضوء ينتقل في خطوط مستقيمة، وتقاطع الأشعة عبر الثقب هو سر انقلاب الصورة.' },
+      { type: 'fiction', label: 'خيال', text: 'لقاء الطفلة نور بابن الهيثم عبر بوابة النور والقط حِبر هو وسيلتنا الخيالية لربط أطفال اليوم بالعلماء.' },
+      { type: 'traditional', label: 'يُحكى', text: 'قصة مشروع تنظيم فيضان النيل في مصر ورواية أسوان، وهي رواية تاريخية متداولة تختلف المصادر في تفاصيلها.' }
+    ],
+    askTheAuthor: {
+      question: '«هل كنتَ تخاف من الوقوع في الخطأ؟»',
+      answer: '«كلنا نخطئ يا أحبائي... والخطأ ليس نهاية المطاف، بل هو أشجع بابٍ من أبواب التعلم الحقيقي!» — الحسن بن الهيثم'
+    },
+    parentsGuide: {
+      title: 'ملحق الوالدين والمربين 📖',
+      prompts: [
+        'متى ارتكب طفلك خطأً وكان هذا الخطأ بداية لفهم شيء جديد؟ ناقش معه فكرة الاعتراف بالخطأ كشجاعة علمية.',
+        'كيف تنمي فضول طفلك عندما يسأل "لماذا وكيف؟" دون التسرع في إسكاته أو إعطائه جواباً جاهزاً سريعاً؟'
+      ]
+    }
+  }
+};
+

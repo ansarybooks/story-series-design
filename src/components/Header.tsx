@@ -3,8 +3,8 @@ import { BookOpen, Sparkles, Sliders, Palette, Users, Download, Volume2, VolumeX
 import { playGoldenGlowChime } from '../utils/soundEffects';
 
 interface HeaderProps {
-  activeTab: 'canvas' | 'story' | 'pages' | 'proof' | 'characters' | 'palette';
-  setActiveTab: (tab: 'canvas' | 'story' | 'pages' | 'proof' | 'characters' | 'palette') => void;
+  activeTab: 'canvas' | 'story' | 'pages' | 'importer' | 'proof' | 'characters' | 'palette';
+  setActiveTab: (tab: 'canvas' | 'story' | 'pages' | 'importer' | 'proof' | 'characters' | 'palette') => void;
   audioEnabled: boolean;
   setAudioEnabled: (val: boolean) => void;
   onQuickDownload: () => void;
@@ -94,8 +94,21 @@ export const Header: React.FC<HeaderProps> = ({
               }`}
             >
               <Sparkles className="w-4 h-4 text-[#F2A93B]" />
-              <span className="hidden md:inline">الصفحات الداخلية ({spreadCount})</span>
+              <span className="hidden md:inline">الصفحات ({spreadCount})</span>
               <span className="md:hidden">Pages</span>
+            </button>
+
+            <button
+              onClick={() => setActiveTab('importer')}
+              className={`flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold transition cursor-pointer ${
+                activeTab === 'importer'
+                  ? 'bg-[#2F4B8A] text-white shadow-sm'
+                  : 'text-[#2F4B8A]/80 hover:bg-[#2F4B8A]/10'
+              }`}
+            >
+              <span className="text-[#F2A93B] font-bold">★</span>
+              <span className="hidden lg:inline">استيراد السكريبت</span>
+              <span className="lg:hidden">السكريبت</span>
             </button>
 
             <button

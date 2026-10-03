@@ -10,16 +10,18 @@ import { Header } from './components/Header';
 import { SpreadCanvas } from './components/SpreadCanvas';
 import { OverlayControls } from './components/OverlayControls';
 import { StoryReaderView } from './components/StoryReaderView';
+import { StoryBookReader } from './components/StoryBookReader';
 import { ProductionProofingPanel } from './components/ProductionProofingPanel';
 import { CharacterDossier } from './components/CharacterDossier';
 import { PaletteStudio } from './components/PaletteStudio';
 import { StoryEditor } from './components/StoryEditor';
 import { PagesSequenceManager } from './components/PagesSequenceManager';
+import { ScriptImporter } from './components/ScriptImporter';
 import { downloadOriginalImage } from './utils/exportTools';
 import { Sparkles, Heart } from 'lucide-react';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState<'canvas' | 'story' | 'pages' | 'proof' | 'characters' | 'palette'>('canvas');
+  const [activeTab, setActiveTab] = useState<'canvas' | 'story' | 'pages' | 'importer' | 'proof' | 'characters' | 'palette'>('canvas');
   const [currentSpreadIndex, setCurrentSpreadIndex] = useState(0);
   const [audioEnabled, setAudioEnabled] = useState(true);
   const [magnifierActive, setMagnifierActive] = useState(false);
@@ -112,12 +114,9 @@ export default function App() {
             </div>
           )}
 
-          {/* TAB 2: STORY READER MODE (RTL) */}
+          {/* TAB 2: STORY READER MODE (RTL COMPLETE BOOK) */}
           {activeTab === 'story' && (
-            <StoryReaderView
-              spread={currentSpread}
-              storyConfig={storyConfig}
-              setStoryConfig={setStoryConfig}
+            <StoryBookReader
               audioEnabled={audioEnabled}
             />
           )}
@@ -135,7 +134,14 @@ export default function App() {
             />
           )}
 
-          {/* TAB 4: PRINT PROOFING */}
+          {/* TAB 4: SCRIPT & PROMPTS IMPORTER */}
+          {activeTab === 'importer' && (
+            <ScriptImporter
+              audioEnabled={audioEnabled}
+            />
+          )}
+
+          {/* TAB 5: PRINT PROOFING */}
           {activeTab === 'proof' && (
             <ProductionProofingPanel spread={currentSpread} />
           )}
