@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --amber-gold: #F2A93B;
+    --indigo-blue: #2F4B8A;
+    --warm-sand: #D9A66B;
+    --turquoise-green: #2E9E8F;
+    --cream-paper: #FAF6EE;
+  }
+
+  body {
+    background-color: #F5EFE1;
+    color: #2F4B8A;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-amiri {
+  font-family: 'Amiri', serif;
+}
+
+.font-fredoka {
+  font-family: 'Fredoka', cursive, sans-serif;
+}
+
+.font-sans-story {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Paper grain effect */
+.paper-grain {
+  background-image: radial-gradient(rgba(47, 75, 138, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
