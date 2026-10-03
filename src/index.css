@@ -33,3 +33,18 @@
   background-image: radial-gradient(rgba(47, 75, 138, 0.03) 1px, transparent 0);
   background-size: 24px 24px;
 }
+
+@media print {
+  @page {
+    size: landscape;
+    margin: 8mm;
+  }
+  body {
+    background: #FAF6EE !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  header, footer, nav, button {
+    display: none !important;
+  }
+}

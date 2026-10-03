@@ -8,6 +8,7 @@ interface HeaderProps {
   audioEnabled: boolean;
   setAudioEnabled: (val: boolean) => void;
   onQuickDownload: () => void;
+  onOpenFullBookPdf: () => void;
   spreadCount: number;
   currentSpreadIndex: number;
   onSelectSpread: (index: number) => void;
@@ -19,6 +20,7 @@ export const Header: React.FC<HeaderProps> = ({
   audioEnabled,
   setAudioEnabled,
   onQuickDownload,
+  onOpenFullBookPdf,
   spreadCount,
   currentSpreadIndex,
   onSelectSpread
@@ -160,13 +162,23 @@ export const Header: React.FC<HeaderProps> = ({
               {audioEnabled ? <Volume2 className="w-4 h-4 text-[#2E9E8F]" /> : <VolumeX className="w-4 h-4 text-[#2F4B8A]/50" />}
             </button>
 
+            {/* Full Book Printable Dummy Export */}
+            <button
+              onClick={onOpenFullBookPdf}
+              className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-[#2F4B8A] hover:bg-[#253d70] text-white font-bold text-xs sm:text-sm shadow-sm transition cursor-pointer"
+              title="تصدير ماكيت الكتاب كاملاً مع النصوص المدمجة"
+            >
+              <BookOpen className="w-4 h-4 text-[#F2A93B]" />
+              <span className="hidden sm:inline">الكتاب كاملاً (PDF)</span>
+            </button>
+
             {/* Quick High-Res Download */}
             <button
               onClick={onQuickDownload}
               className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-[#F2A93B] hover:bg-[#df9425] text-amber-950 font-bold text-xs sm:text-sm shadow-sm transition cursor-pointer"
             >
               <Download className="w-4 h-4" />
-              <span className="hidden sm:inline">Download Spread</span>
+              <span className="hidden sm:inline">Download Art</span>
             </button>
           </div>
         </div>

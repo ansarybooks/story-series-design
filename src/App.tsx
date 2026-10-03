@@ -17,6 +17,7 @@ import { PaletteStudio } from './components/PaletteStudio';
 import { StoryEditor } from './components/StoryEditor';
 import { PagesSequenceManager } from './components/PagesSequenceManager';
 import { ScriptImporter } from './components/ScriptImporter';
+import { FullBookPdfView } from './components/FullBookPdfView';
 import { downloadOriginalImage } from './utils/exportTools';
 import { Sparkles, Heart } from 'lucide-react';
 
@@ -25,6 +26,7 @@ export default function App() {
   const [currentSpreadIndex, setCurrentSpreadIndex] = useState(0);
   const [audioEnabled, setAudioEnabled] = useState(true);
   const [magnifierActive, setMagnifierActive] = useState(false);
+  const [showFullBookPdf, setShowFullBookPdf] = useState(false);
 
   // Print overlays
   const [overlays, setOverlays] = useState<OverlayConfig>({
@@ -79,10 +81,16 @@ export default function App() {
           audioEnabled={audioEnabled}
           setAudioEnabled={setAudioEnabled}
           onQuickDownload={handleQuickDownload}
+          onOpenFullBookPdf={() => setShowFullBookPdf(true)}
           spreadCount={SPREADS.length}
           currentSpreadIndex={currentSpreadIndex}
           onSelectSpread={setCurrentSpreadIndex}
         />
+
+        {/* Full Book Printable PDF Modal */}
+        {showFullBookPdf && (
+          <FullBookPdfView onClose={() => setShowFullBookPdf(false)} />
+        )}
 
         {/* Main Workspace Area */}
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
